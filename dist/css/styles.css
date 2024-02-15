@@ -10987,10 +10987,10 @@ html {
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
-  width: 15rem;
+  height: 15rem;
 }
 .masthead .masthead-avatar-back {
-  width: 12rem;
+  height: 15rem;
 }
 .thumbnail .profile-photo-back{
   display: none;
