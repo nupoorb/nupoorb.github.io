@@ -10989,6 +10989,19 @@ html {
 .masthead .masthead-avatar {
   width: 15rem;
 }
+.masthead .masthead-avatar-back {
+  width: 12rem;
+}
+.thumbnail .profile-photo-back{
+  display: none;
+}
+.thumbnail:hover .profile-photo{
+  display: none;
+}
+.thumbnail:hover .profile-photo-back{
+  display: block;
+}
+
 
 @media (min-width: 992px) {
   .masthead {
