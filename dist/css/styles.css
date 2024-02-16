@@ -74,7 +74,7 @@
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
   --bs-link-color: #ddb786;
-  --bs-link-hover-color: #15967d;
+  --bs-link-hover-color: var(--bs-secondary-rgb);
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -10900,8 +10900,7 @@ html {
 }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
 }
@@ -10930,8 +10929,6 @@ html {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
   #mainNav .navbar-brand {
@@ -11022,6 +11019,9 @@ html {
   display: block;
   max-width: 25rem;
   border-radius: 0.5rem;
+  border-color: rgba(var(--bs-primary-rgb), 0.7);
+  border-width: var(--bs-border-width);
+  border-style: solid;
   overflow: hidden;
 }
 .portfolio .portfolio-item .portfolio-item-caption {
