@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nupoor Bibawe | Projects</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="background-index">
+    <header class="d-flex justify-content-between align-items-center p-3">
+        <h4 class="p-2"><a href="../index.html">Nupoor Bibawe</a></h4>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
+                <li class="nav-item"><span class="text-light">|</span></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#projects">Projects</a></li>
+                <li class="nav-item"><span class="text-light">|</span></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main-margin">
+        <section class="content-box">
+            <div class="heading-box">
+                <h2 class="text-center">Wheeled Robots</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <img src="../img/project-wheeled1.JPG" alt="Wheeled Robots" class="img-fluid project-image" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-md-6 mx-auto">
+                    <p>Developed robots to complete challenges for ABU Robocon’19.</p>
+                    <ul>
+                        <li><a href="#robot1"><i>Autonomous 4-wheeled Robot</i></a></li>
+                        <li><a href="#robot2"><i>Remote Controlled 3-wheeled Robot</i></a></li>
+                        <li><a href="#robot3"><i>Remote Controlled 4-wheeled Robot</i></a></li>
+                    </ul> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <ul>
+                        <li>Programmed remote-controlled 3- and 4-wheeled holonomic drives using PID and Odometry for precise motion and positioning, leveraging C++ with 32-bit Arduino boards, resulting in a 50% reduction in robot travel time.</li>
+                        <li>Automated locomotion using machine vision and image processing techniques in Python with OpenCV.</li>
+                        <li>Interfaced Linux with Arduino to ensure fast real-time video processing, enhancing the overall performance of the system.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="robot1">
+                <div class="col-md-6 mx-auto"> <!-- Left Column -->
+                    <h5>Autonomous 4-wheeled Robot</h5>
+                    <p>Holonomic omni-wheel drive robot with Arduino control, onboard camera, and pneumatic throwing mechanism, navigating via floor lines to complete arena tasks.</p>
+                    <h6>Challenges/Solutions:</h6>
+                    <ul>
+                        <li>Overcame camera issues (lighting interference, image distortion, debris, damaged lines) through advanced image processing techniques for accurate line detection.</li>
+                        <li>Mitigated inertia-related problems (wheel slippage, unexpected movement due to 20+ kg weight) by implementing PID control with encoders at individual wheel and system levels.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 mx-auto">
+                    <img src="../img/project-wheeled2.jpg" alt="Wheeled Robots" class="img-fluid project-image" style="width: 100%; height: auto;">
+                </div>
+            </div>
+            <div class="row" id="robot2">
+                <div class="col-md-6 mx-auto">
+                    <img src="../img/project-wheeled3.JPG" alt="Wheeled Robots" class="img-fluid project-image" style="width: 100%; height: auto;">
+                </div>
+                <div class="col-md-6 mx-auto"> <!-- Right Column -->
+                    <h5>Remote Controlled 3-wheeled Robot</h5>
+                    <p>Engineered a versatile remote-controlled 3-wheeled robot with holonomic drive and pneumatic throwing mechanism, operated via Xbox 360 controller.</p>
+                    <h6>Challenges/Solutions:</h6>
+                    <ul>
+                        <li>Unsynchronized wheel motion due to motor inconsistencies. Implemented PID control with encoder feedback. Integrated IMU to correct unintentional rotational motion.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="robot3">
+                <div class="col-md-6 mx-auto"> <!-- Right Column -->
+                    <h5>Remote Controlled 4-wheeled Robot</h5>
+                    <p>Engineered a holonomic 4-wheeled drive robot with a gripping mechanism, featuring advanced stability control for versatile operation.</p>
+                    <h6>Challenges/Solutions:</h6>
+                    <ul>
+                        <li>The robot's relatively high center of gravity compared to its base area posed a significant toppling risk during operation. To address this, a proportional control system was implemented to manage acceleration and deceleration, effectively minimizing toppling risk and ensuring stable operation across various terrains and tasks.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 mx-auto">
+                    <img src="../img/project-wheeled4.jpg" alt="Wheeled Robots" class="img-fluid project-image" style="width: 100%; height: auto;">
+                </div>
+            </div>
+        </section>
+        <div class="d-flex justify-content-between align-items-center mt-4 mb-4">
+            <a href="project2.html" class="index-button"><< Previous Project</a>
+            <a href="../index.html#projects" class="index-button">Back to Projects</a>
+            <a href="project4.html" class="index-button">Next Project >></a>
+        </div>
+    </main>
+    <footer>
+        <div class="d-flex justify-content-center mt-4">
+            <a href="https://github.com/nupoorb" class="text-light mx-2" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://linkedin.com/in/nupoorbibawe" class="text-light mx-2" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="mailto:nupoorbibawe@gmail.com" class="text-light mx-2"><i class="fas fa-envelope fa-2x"></i></a>
+        </div>
+    </footer>
+</body>
+</html> 
